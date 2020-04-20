@@ -1,10 +1,15 @@
+title: Webpack concept
+---
 # Webpack 
 >--- 第一节 ---  
 
 1、什么是 Webpack  
   Webpack 本质上是一个现代 JavaScript 应用程序的静态模块打包器，在 Webpack 处理应用程序员时，它会递归地构建一个依赖关系图，其中包含应用程序需要的模块，然后将所有这些模块打包成一个或多个bundle。  
 
-  ![webpack](./imgs/webpack.jpg)
+  <!-- ![webpack](./imgs/webpack.jpg) -->
+  \{%
+    assets-webpack webpack.jpg webpack
+  %}
 
 2、核心概念  
 - Entry（入口）：  Webpack 构建的第一步从 Entry Point(入口起点)开始，指示 Webpack 应该使用哪些模块作为构建其内部依赖图的开始，默认值是：`./src/index.js`。Entry 可以有3种类型： string | object | array。最常用的 object 对象语法，扩展性最高，也常用于分离应用程序和第三方入口库。  
