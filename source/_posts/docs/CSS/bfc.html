@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test BFC</title>
+  <style type="text/css">
+    .wrap{
+      border: 2px solid yellow;
+      width: 250px;
+      overflow: hidden;
+    }
+    section {
+      background-color: pink;
+      float: left;
+      width: 100px;
+      height: 100px;
+    }
+    .inline{
+      /* font-size: 0; */
+      display:table;
+      word-spacing:0em;
+    }
+    .child{
+      display: inline-block;
+      /* float: left; */
+      /* font-size: 14px; */
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section>1</section>
+    <section>2</section>
+  </div>
+  <div class="inline">
+    <span class="child">hello</span>
+    <span class="child">world</span>
+  </div>
+</body>
+</html>
