@@ -43,7 +43,8 @@ title: 浏览器工作原理与实践---消息队列和事件循环
   ```  
 
 ### async、 await的认识
-  await只能在 async 关键字作用区域内使用，返回一个 Promise 。使用 await 可以使用多个 Promise ， 并且支持 Promise 的多重嵌套。
+  await只能在 async 关键字作用区域内使用，返回一个 Promise 。使用 await 可以使用多个 Promise ， 并且支持 Promise 的多重嵌套。  
+  async/await 提供了在不阻塞主线程的情况下使用同步代码实现异步访问资源的能力，并且使得代码逻辑更加清晰。
   
 ## 最佳实践  
   ```
