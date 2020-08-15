@@ -6,7 +6,7 @@ title: 浏览器工作原理与实践---消息队列和事件循环
 
 `渲染进程专门有一个 IO 线程用来接收其他进程传进来的消息`，接收到消息之后，会将这些消息组装成任务发送给渲染主线程。
 \{%
-   assets-js/img msgq.jpg messgage-queue
+   assets-js msgq.jpg messgage-queue
 %}
 # 关于事件循环
 > 由setTimeout、Promise、async代码的执行顺序引发的深层思考
@@ -57,7 +57,8 @@ title: 浏览器工作原理与实践---消息队列和事件循环
     }
     async function changeColor(duration,color){
       console.log(color);
-      await sleep(duration);    }
+      await sleep(duration);   
+    }
     async function main(){
       while(true){
           await changeColor(3000,"green");
