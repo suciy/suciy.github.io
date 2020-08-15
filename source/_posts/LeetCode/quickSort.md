@@ -1,8 +1,12 @@
-// 快速排序
-// 在数组中找一个元素作为基准，比它小的在左边，比它大的在右边
-// 代码实现要点：支点取中间，使用L和R表示数组的最小和最大位置，不断进行比较
-// 直到找到比支点小的数，随后交换，不断减小范围。递归L到支点前一个元素，递归支点后一个元素到R元素
-// 内存占用少
+# 快速排序
+// 在数组中找一个元素作为基准，比它小的在左边，比它大的在右边  
+
+// 代码实现要点：支点取中间，使用L和R表示数组的最小和最大位置，不断进行比较  
+
+// 直到找到比支点小的数，随后交换，不断减小范围。递归L到支点前一个元素，递归支点后一个元素到R元素  
+```
+// 内存占用少  
+
 function quickSort(arr, left, right) {
   /*
    * len为数组的长度;
@@ -34,7 +38,6 @@ function quickSort(arr, left, right) {
   // 递归执行直到不满足left<right;返回本身；
   return arr;
 }
-
 function partition(arr, left, right) {
   /*
    * 这部分是具体实现排序的部分；
@@ -104,3 +107,4 @@ function quickSort2(arr){
   return quickSort2(left).concat(privot, quickSort2(right));
 }
 console.log(quickSort2([1,3,4,5,9]))
+```
