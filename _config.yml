@@ -100,5 +100,5 @@ stylus:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: https://github.com/suciy/suciy.github.io.git
+  repo: https://github.com/suciy/suciy.github.io
   branch: master
