@@ -1,7 +1,8 @@
-# 实现Promise的大致思路
-// 定义Promise的三种状态常量cc
+title: 实现Promise的大致思路
+-----
 
 ```
+// 定义Promise的三种状态常量
 const PENDING = 'PENDING'
 const FULFILLED = 'FULFILLED'
 const REJECTED = 'REJECTED'

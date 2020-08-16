@@ -1,6 +1,7 @@
-// 写个转换函数，把一个JSON对象的key从横杠形式（Pascal）转换到小驼峰形式（Camel），即{“a_b”:1, 'aB': 2}——>{“aB”:1} 
-// 注：考虑下嵌套，且不能改变原数据
+title: 转换函数，把一个JSON对象的key从横杠形式（Pascal）转换到小驼峰形式（Camel)
+----
 ```
+// 即{“a_b”:1, 'aB': 2}——>{“aB”:1} 
 function myParse(obj) {
   // 数组
   if(obj instanceof Array) {
