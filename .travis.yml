@@ -1,0 +1,28 @@
+language: node_js
+node_js: 12.18.2
+addons: 
+  apt:
+    update: true 
+branches:
+  only:
+  - master 
+cache:
+  directories: 
+  - node_modules 
+install:
+- npm install
+script:
+- hexo clean
+- hexo generate
+after_success:
+  - cd ./public
+  - git init
+  - git config --global user.name 'suciy'
+  - git config --global user.email '1583942620@11.com'
+  - git add .
+  - git commit -m "generate static resources, triggerd by travis ci"
+  - git push --force "https://suciy:${REPO_TOKEN}@${GH_REF}" master:master
+env:
+  global:
+    - GH_REF: github.com/suciy/suciy.github.com.git
+
